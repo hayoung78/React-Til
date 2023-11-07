@@ -45,7 +45,7 @@ const TodoPage = () => {
     };
     setTodos((prev) => [newTodo, ...prev]);
   };
-  //handleDeleteTodo =>삭제시 삭제한 아이디가 맞는걸 찾을때
+  //handleDeleteTodo =>삭제시    삭제한 아이디가 맞는걸 찾을때
   const handleDeleteTodo = (id) => {
     const deleteTodos = todos.filter((todo) => todo.id !== id);
     setTodos(deleteTodos);
